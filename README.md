@@ -4,8 +4,7 @@ dolonc do klasy 'mysqldb' interface dolonc interface 'sqlinterface' do 'mysqldb'
 abstrakcyjna klasa powina zawierac odpowiednie wlasciwosci do polonceia sie z baza danych za pomoca funckji mysqli_connect.
 abstrakcyjna klasa dayabase ma zawierac odpowiednie metody do operowania na crud
 
-1.
-tworzenie bazydanych
+1. tworzenie bazydanych
 2.
 tworzenie tabeli
 3.
