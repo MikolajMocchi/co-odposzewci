@@ -5,14 +5,10 @@ abstrakcyjna klasa powina zawierac odpowiednie wlasciwosci do polonceia sie z ba
 abstrakcyjna klasa dayabase ma zawierac odpowiednie metody do operowania na crud
 
 1. tworzenie bazydanych
-2.
-tworzenie tabeli
-3.
-odczytywanie tabeli danych
-4.
-aktualizacja tabeli
-5.
-usuwanie tabeli
+2. tworzenie tabeli
+3. odczytywanie tabeli danych
+4. aktualizacja tabeli
+5. usuwanie tabeli
 
 
 
