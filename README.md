@@ -34,5 +34,6 @@ sqlinterface ma implementować takie jak:
 
 wszystkie metody obietky z kalsy mysqldb mają być sprawdzone i wywołane w kodzie.
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-dodatkowe punkty będą uwzględione za impeentacje własnej metody klasy metod testującej poprawność działania bądź naszego obiektu
+dodatkowe punkty będą uwzględione za impeentacje własnej metody klasy metod testującej poprawność działania bądź naszego obiektu.
+punkty dodatkowe za spreparowane zapytania 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
