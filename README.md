@@ -18,13 +18,13 @@ abstrakcyjna klasa dayabase ma zawierac odpowiednie metody do operowania na crud
 
 
 sqlinterface ma implementować takie jak:
-findAll()
-find()
-eee
-readOne()
-eee
-*stuk*
-iReadFirstTen()
+- findAll()
+- find()
+- eee
+- readOne()
+- eee
+- *stuk*
+- readFirstTen()
 
 
 
