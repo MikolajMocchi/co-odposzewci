@@ -10,14 +10,14 @@ abstract class database {
     protected $connection;
 
     public function connect() {
-        $this->connection = mysqli_connect("localhost", "root", "", "test");
+        $this->connection = mysqli_connect("localhost", "root", "", "kamil");
         return $this->connection;
     }
 
     abstract public function createDatabase($name);
     abstract public function createTable($sql);
     abstract public function readTable($tabelka);
-    abstract public function updateTable($sql, $params);
+    abstract public function updateTable($sql, $abram);
     abstract public function deleteTable($tabelka);
 }
 
@@ -35,9 +35,9 @@ class mysqldb extends database implements sqlinterface {
         return mysqli_query($this->connection, "SELECT * FROM $tabelka");
     }
 
-    public function updateTable($sql, $params) {
+    public function updateTable($sql, $abram) {
         $stmt = mysqli_prepare($this->connection, $sql);
-        mysqli_stmt_bind_param($stmt, str_repeat("s", count($params)), ...$params);
+        mysqli_stmt_bind_param($stmt, 'is', ...$abram);
         return mysqli_stmt_execute($stmt);
     }
 
@@ -76,9 +76,9 @@ $test = new TextDatabase();
 $db->connect();
 $test->test($db->connect(), "Polaczenie");
 
-$db->createDatabase("test");
+$db->createDatabase("kamil");
 
-mysqli_select_db($db->connect(), "test");
+mysqli_select_db($db->connect(), "kamil");
 
 $db->createTable("CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -102,4 +102,4 @@ $test->test($db->updateTable(
 ), "Aktualizacja");
 
 $test->test($db->readTable("users"), "Odczyt");
-$test->test($db->deleteTable("users"), "Usuwanie");
+// $test->test($db->deleteTable("users"), "Usuwanie");
