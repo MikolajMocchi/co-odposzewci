@@ -64,14 +64,14 @@ class mysqldb extends database implements sqlinterface {
         return mysqli_query($this->connection, "SELECT * FROM $tabelka LIMIT 10");
     }
 }
-class TestDatabase {
+class TextDatabase {
     public function test($result, $name) {
         echo $result ? "[OK] $name<br>" : "[BLAD] $name<br>";
     }
 }
 
 $db = new mysqldb();
-$test = new TestDatabase();
+$test = new TextDatabase();
 
 $db->connect();
 $test->test($db->connect(), "Polaczenie");
